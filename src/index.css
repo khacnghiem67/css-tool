@@ -1,0 +1,150 @@
+:root {
+  --borderColor: #d4d0d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-item:hover a {
+  text-decoration: none;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 7px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  transition: all 0.2s linear;
+
+  border: 1px solid var(--borderColor);
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #dedcd4;
+}
+
+button.active {
+  background: #ddd9d9;
+}
+
+button.btn-main {
+  border: 1px solid gray;
+  padding: 10px 20px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.box-shadow,
+.transform,
+.text-shadow,
+.Border {
+  max-width: 950px;
+  margin: auto;
+}
+
+.gradientLeft-header,
+.gradientLeft-footer,
+.transformLeft,
+.transformRight__header,
+.transformRight__footer,
+.borderRight__header,
+.borderRight__footer,
+.textShadowLeft,
+.textShadowRight__header,
+.textShadowRight__footer,
+.borderLeft,
+.boxShadowLeft,
+.boxShadowRight__header,
+.boxShadowRight__footer {
+  border: 1px solid var(--borderColor);
+  border-radius: 2px;
+}
+
+.transformLeft .transformLeft__header,
+.textShadowLeft__header,
+.boxShadowLeft__header {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.layer {
+  transition: all 0.2s linear;
+  cursor: move;
+  border-radius: 3px;
+}
+
+.layer.active {
+  background: #a8a8a6;
+}
+
+/* Boxshadow */
+@import url('./css/boxShadow.css');
+
+/* TextShadow */
+@import url('./css/textShadow.css');
+
+/* Border */
+@import url('./css/border.css');
+
+/* Transform */
+@import url('./css/transform.css');
+
+/* Gradient */
+@import url('./css/gradient.css');

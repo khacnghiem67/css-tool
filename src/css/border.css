@@ -1,0 +1,20 @@
+.Border .borderLeft .style .style-btns,
+.Border .borderLeft .position .position-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+
+.borderRight .borderRight__header .boxPreview {
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+
+.borderRight .borderRight__header .boxPreview div {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #111;
+  transition: all 0.2s linear;
+}

@@ -1,0 +1,36 @@
+.gradientLeft-header .direction .direction-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gradientLeft-header .color .color-preview {
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid var(--borderColor);
+  border-radius: 2px;
+}
+
+.gpw {
+  padding: 0 !important;
+  position: relative;
+  height: 0;
+}
+
+.gpw .trigger {
+  padding: 0 !important;
+}
+
+.gpw .trigger .inner {
+  display: none;
+}
+
+.gpw .popover {
+  top: -3px;
+  left: -1px;
+}
+
+.gradientRight .gradientRight-boxPreview {
+  min-height: 800px;
+  border-radius: 2px;
+}
