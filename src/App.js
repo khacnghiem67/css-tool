@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Redirect,
@@ -13,7 +14,7 @@ import Gradient from './components/Gradient';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className='App'>
         <Header />
 
@@ -38,7 +39,7 @@ function App() {
           />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
