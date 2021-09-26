@@ -158,7 +158,7 @@ function Transform() {
                       height: '100%',
                       background: `rgb(${transform.boxColor.r},${transform.boxColor.g},${transform.boxColor.b},${transform.boxColor.a})`,
                       transition: 'all .2s linear',
-                      transform: `scale(${transform.value.scaleX}) rotate(${transform.value.rotate}) skew(${transform.value.skewX}deg,${transform.value.skewY}deg) translate(${transform.value.translateX}px,${transform.value.translateY}px)`,
+                      transform: `scale(${transform.value.scaleX}) rotate(${transform.value.rotate}deg) skew(${transform.value.skewX}deg,${transform.value.skewY}deg) translate(${transform.value.translateX}px,${transform.value.translateY}px)`,
                       transformOrigin: `${transform.value.transformOriginX}%  ${transform.value.transformOriginY}%`,
                     }}
                   >
