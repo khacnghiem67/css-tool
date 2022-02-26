@@ -1,0 +1,10 @@
+.boxShadowRight__header .boxPreview {
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+
+.boxShadowRight__header .boxPreview div {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+}
